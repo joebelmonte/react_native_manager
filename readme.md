@@ -1,3 +1,4 @@
 Notes on technologies used:
 - React Native
-- Redux
+- redux
+- react-redux
