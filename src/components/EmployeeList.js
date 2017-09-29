@@ -28,6 +28,7 @@ class EmployeeList extends Component {
   }
 
   render() {
+    console.log('here in employeeList');
     return <ListView enableEmptySections dataSource={this.dataSource} renderRow={this.renderRow} />;
   }
 }

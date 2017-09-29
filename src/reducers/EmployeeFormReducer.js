@@ -1,4 +1,9 @@
-import { EMPLOYEE_UPDATE, EMPLOYEE_CREATE, EMPLOYEE_SAVE_SUCCESS } from '../actions/types';
+import {
+  EMPLOYEE_UPDATE,
+  EMPLOYEE_CREATE,
+  EMPLOYEE_SAVE_SUCCESS,
+  EMPLOYEES_FETCH_SUCCESS
+} from '../actions/types';
 
 const INITIAL_STATE = {
   name: '',
@@ -13,6 +18,9 @@ export default (state = INITIAL_STATE, action) => {
     case EMPLOYEE_CREATE:
       return INITIAL_STATE;
     case EMPLOYEE_SAVE_SUCCESS:
+      return INITIAL_STATE;
+    case EMPLOYEES_FETCH_SUCCESS:
+      console.log('here in my employeeformreducer');
       return INITIAL_STATE;
     default:
       return state;
