@@ -23,13 +23,15 @@ const Confirm = ({ children, visible, onAccept, onDecline }) => {
 
 const styles = {
   cardSectionStyle: {
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   textStyle: {
     flex: 1,
     fontSize: 18,
     textAlign: 'center',
-    lineHeight: 40
+    lineHeight: 40,
+    height: 150
   },
   containerStyle: {
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
