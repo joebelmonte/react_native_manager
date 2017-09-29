@@ -4,7 +4,8 @@ import {
   EMPLOYEE_UPDATE,
   EMPLOYEE_CREATE,
   EMPLOYEES_FETCH_SUCCESS,
-  EMPLOYEE_SAVE_SUCCESS
+  EMPLOYEE_SAVE_SUCCESS,
+  EMPLOYEE_CLEAR_SUCCESS
 } from './types';
 
 export const employeeUpdate = ({ prop, value }) => ({
@@ -66,3 +67,5 @@ export const employeeDelete = ({ uid }) => {
       });
   };
 };
+
+export const employeeClear = () => ({ type: EMPLOYEE_CLEAR_SUCCESS });
